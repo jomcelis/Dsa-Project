@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dsa_final.HelloController">
+   <Pane layoutX="215.0" layoutY="107.0" prefHeight="408.0" prefWidth="370.0" style="-fx-background-color: linear-gradient(to right top, #3c56a6, #4155a5, #4553a4, #4952a3, #4d50a2, #504fa2, #544fa1, #574ea1, #5a4ea1, #5e4ea1, #614da0, #644da0); -fx-background-radius: 15px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 1,0, 0);">
+      <children>
+        <Button fx:id="SignIn_Button" layoutX="97.0" layoutY="200.0" mnemonicParsing="false" onAction="#SignInBtn_Click" prefHeight="6.0" prefWidth="176.0" style="-fx-background-color: white; -fx-background-radius: 15px;" text="Sign in">
+            <font>
+               <Font name="Futura-Bold" size="17.0" />
+            </font>
+            <textFill>
+               <LinearGradient endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.3921568691730499" green="0.3019607961177826" blue="0.6274510025978088" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.23529411852359772" green="0.33725491166114807" blue="0.6509804129600525" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+        <TextField fx:id="SignIn_Username" layoutX="64.0" layoutY="154.0" prefHeight="36.0" prefWidth="241.0" promptText="Username" style="-fx-background-color: #F3F1F9; -fx-background-insets: 0, 0 0 1 0; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.5,1, 2);" />
+         <Text fill="WHITE" layoutX="30.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quiñonez-Celis Dental Clinic">
+            <font>
+               <Font name="HelveticaRounded-Bold" size="22.0" />
+            </font>
+         </Text>
+         <Text fill="WHITE" layoutX="97.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Queue manager">
+            <font>
+               <Font name="HelveticaRounded-Bold" size="22.0" />
+            </font>
+         </Text>
+        <TextField fx:id="SignIn_Password" layoutX="65.0" layoutY="108.0" prefHeight="36.0" prefWidth="241.0" promptText="Password" style="-fx-background-color: #F3F1F9; -fx-background-insets: 0, 0 0 1 0; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.5,1, 2);" />
+         <ImageView fitHeight="147.0" fitWidth="195.0" layoutX="88.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/Logo.png" />
+            </image></ImageView>
+      </children>
+   </Pane>
+</Pane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User_Hompage.UserHomepage">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-image url('F:\MCM\2nd year\1T\DATA STRUCTURES\Ui dental clinic\LogInBG')">
+            <children>
+                <Button fx:id="UsrHompage_Reservation" layoutX="14.0" layoutY="555.0" mnemonicParsing="false" onAction="#UsrHompage_ReservationBtn" prefHeight="30.0" prefWidth="234.0" text="Book a reservation"  />
+                <Button fx:id="UsrHompage_ReservationDtls" layoutX="283.0" layoutY="197.0" mnemonicParsing="false" onAction="#UsrHompage_ReservationDtlsBtn" prefHeight="206.0" prefWidth="234.0" text="Walk-in Clients " style="-fx-background-color: linear-gradient(from 25px 25px to 100px 100px, #3d57a7, #604ba0); -fx-background-radius: 15px;" >
+               <font>
+                  <Font name="Inter Regular" size="23.0" />
+               </font></Button>
+                <Button layoutX="283.0" layoutY="555.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="234.0" text="Announcements" />
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

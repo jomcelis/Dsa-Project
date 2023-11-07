@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User_Hompage.MainQueue">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <TextField fx:id="firstName_Input" layoutX="149.0" layoutY="90.0" onAction="#firstName_Input" prefHeight="26.0" prefWidth="77.0" />
+            <Button fx:id="addButton" layoutX="149.0" layoutY="240.0" mnemonicParsing="false" onAction="#handleAddButtonAction" prefHeight="26.0" prefWidth="172.0" text="Add" />
+            <Button fx:id="deleteButton" layoutX="187.0" layoutY="298.0" mnemonicParsing="false" onAction="#handleRemoveButtonAction" prefHeight="26.0" prefWidth="94.0" text="Delete" />
+            <Button fx:id="editButton" layoutX="188.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleEditButtonAction" prefHeight="26.0" prefWidth="94.0" text="Visualize" />
+            <Button fx:id="walkInButton" layoutX="188.0" layoutY="352.0" mnemonicParsing="false" onAction="#HandleWalkInButtonAction" prefHeight="26.0" prefWidth="94.0" text="Walk in" />
+            <Label layoutX="196.0" layoutY="51.0" text="Walk in clients" />
+            <Label layoutX="149.0" layoutY="69.0" text="Name" />
+            <TextField fx:id="lastName_Input" layoutX="243.0" layoutY="90.0" onAction="#lastName_Input" prefHeight="26.0" prefWidth="78.0" />
+            <Label layoutX="243.0" layoutY="69.0" text="Last name" />
+            <TextField fx:id="number_Input" layoutX="149.0" layoutY="140.0" prefHeight="26.0" prefWidth="77.0" />
+            <Label layoutX="151.0" layoutY="123.0" text="Number" />
+            <ChoiceBox fx:id="choiceBox" layoutX="243.0" layoutY="140.0" prefHeight="26.0" prefWidth="78.0" />
+            <Label layoutX="243.0" layoutY="123.0" text="Choicebox" />
+            <RadioButton fx:id="nineAm" layoutX="118.0" layoutY="175.0" mnemonicParsing="false" onAction="#nineAm_Action" text="9:00 AM" />
+            <RadioButton fx:id="tenAm" layoutX="198.0" layoutY="175.0" mnemonicParsing="false" onAction="#tenAm_Action" text="10:00 AM" />
+            <RadioButton fx:id="elevenAm" layoutX="282.0" layoutY="175.0" mnemonicParsing="false" onAction="#elevenAm_Action" text="11:00 AM" />
+            <RadioButton fx:id="onePM" layoutX="118.0" layoutY="200.0" mnemonicParsing="false" onAction="#onePM_Action" text="1:00 PM" />
+            <RadioButton fx:id="twoPm" layoutX="200.0" layoutY="200.0" mnemonicParsing="false" onAction="#twoPm_Action" text="2:00 PM" />
+            <RadioButton fx:id="threePm" layoutX="282.0" layoutY="200.0" mnemonicParsing="false" onAction="#threePm_Action" text="3:00 PM" />
+            <Button fx:id="backButton" layoutX="212.0" layoutY="431.0" mnemonicParsing="false" onAction="#backButton_Click" text="Back" />
+            <Button fx:id="refreshBtn" layoutX="328.0" layoutY="326.0" mnemonicParsing="false" onAction="#refreshBtn_Click" text="Refressh" />
+            <Pane fx:id="mainPain" layoutX="400.0" layoutY="28.0" prefHeight="327.0" prefWidth="384.0" style="-fx-background-color: gray;">
+               <children>
+                  <TextArea fx:id="outputArea" layoutX="9.0" layoutY="70.0" prefHeight="248.0" prefWidth="368.0" />
+                  <Pane layoutX="10.0" layoutY="7.0" prefHeight="57.0" prefWidth="368.0" style="-fx-background-color: orange;">
+                     <children>
+                        <Label fx:id="currentReservation" layoutX="14.0" layoutY="6.0" text="Current Reservation" />
+                        <Label fx:id="currentTime" layoutX="290.0" layoutY="20.0" text="currentTime" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane layoutX="400.0" layoutY="365.0" prefHeight="47.0" prefWidth="182.0" style="-fx-background-color: gray;">
+               <children>
+                  <Label fx:id="reservationOne" layoutX="14.0" layoutY="5.0" text="Reservatoin 1" />
+               </children>
+            </Pane>
+            <Pane layoutX="601.0" layoutY="365.0" prefHeight="47.0" prefWidth="182.0" style="-fx-background-color: gray;">
+               <children>
+                  <Label fx:id="reservationTwo" layoutX="14.0" layoutY="5.0" text="Reservation 2" />
+               </children>
+            </Pane>
+            <Pane layoutX="400.0" layoutY="420.0" prefHeight="47.0" prefWidth="182.0" style="-fx-background-color: gray;">
+               <children>
+                  <Label fx:id="reservationThree" layoutX="14.0" layoutY="5.0" text="Reservatoin 3" />
+               </children>
+            </Pane>
+            <Pane layoutX="601.0" layoutY="420.0" prefHeight="47.0" prefWidth="182.0" style="-fx-background-color: gray;">
+               <children>
+                  <Label fx:id="reservationFour" layoutX="14.0" layoutY="5.0" text="Reservation 4" />
+               </children>
+            </Pane>
+            <Pane layoutX="400.0" layoutY="474.0" prefHeight="47.0" prefWidth="182.0" style="-fx-background-color: gray;">
+               <children>
+                  <Label fx:id="reservationFive" layoutX="14.0" layoutY="5.0" text="Reservation 5" />
+               </children>
+            </Pane>
+            <Pane layoutX="601.0" layoutY="474.0" prefHeight="47.0" prefWidth="182.0" style="-fx-background-color: gray;">
+               <children>
+                  <Label fx:id="reservationSix" layoutX="14.0" layoutY="5.0" text="Reservation 6" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
